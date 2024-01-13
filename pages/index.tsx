@@ -1,10 +1,9 @@
-
-import { Center, Box, Heading } from '@chakra-ui/react'
+import { Box, Center, Heading } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { AppBar } from '../components/AppBar'
-import { StudentIntroList } from '../components/StudentIntroList'
 import { Form } from '../components/Form'
+import { StudentIntroList } from '../components/StudentIntroList'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
