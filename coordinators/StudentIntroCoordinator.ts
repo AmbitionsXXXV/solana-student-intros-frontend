@@ -67,9 +67,7 @@ export class StudentIntroCoordinator {
     )
 
     // 如果没有公钥则返回空数组
-    if (paginatedPublicKeys.length === 0) {
-      return []
-    }
+    if (paginatedPublicKeys.length === 0) return []
 
     // 根据公钥获取账户信息
     const accounts = await connection.getMultipleAccountsInfo(paginatedPublicKeys)
@@ -77,11 +75,8 @@ export class StudentIntroCoordinator {
     // 将获取的账户信息反序列化为学生介绍对象，并返回
     const movies = accounts.reduce((accum: StudentIntro[], account) => {
       const movie = StudentIntro.deserialize(account?.data)
-      if (!movie) {
-        return accum
-      }
 
-      return [...accum, movie]
+      return !movie ? accum : [...accum, movie]
     }, [])
 
     return movies

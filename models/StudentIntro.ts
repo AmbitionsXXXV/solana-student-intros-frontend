@@ -50,17 +50,17 @@ export class StudentIntro {
 
   // 从Buffer反序列化为StudentIntro实例
   static deserialize(buffer?: Buffer): StudentIntro | null {
-    if (!buffer) {
-      return null
-    }
+    if (!buffer) return null
 
     try {
       // 使用Borsh解码Buffer中的数据
       const { name, message } = this.borshAccountSchema.decode(buffer)
+
       return new StudentIntro(name, message)
     } catch (e) {
       // 如果反序列化出错，则记录错误信息并返回null
       console.log('Deserialization error:', e)
+
       return null
     }
   }

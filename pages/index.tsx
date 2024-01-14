@@ -12,16 +12,21 @@ const Home: NextPage = () => {
       <Head>
         <title>Student Intros</title>
       </Head>
+
       <AppBar />
+
       <Center>
         <Box>
           <Heading as="h1" size="l" color="white" ml={4} mt={8}>
             Introduce Yourself!
           </Heading>
+
           <Form />
+
           <Heading as="h1" size="l" color="white" ml={4} mt={8}>
             Meet the Students!
           </Heading>
+
           <StudentIntroList />
         </Box>
       </Center>
