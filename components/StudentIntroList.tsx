@@ -34,13 +34,17 @@ export const StudentIntroList: FC = () => {
           mb={2}
         />
       </Center>
+
       {studentIntros.map((studentIntro, i) => (
         <Card key={i} studentIntro={studentIntro} />
       ))}
+
       <Center>
         <HStack w="full" mt={2} mb={8} ml={4} mr={4}>
           {page > 1 && <Button onClick={() => setPage(page - 1)}>Previous</Button>}
+
           <Spacer />
+
           {StudentIntroCoordinator.accounts.length > page * 5 && (
             <Button onClick={() => setPage(page + 1)}>Next</Button>
           )}
