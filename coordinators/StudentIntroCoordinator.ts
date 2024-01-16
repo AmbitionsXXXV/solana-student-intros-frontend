@@ -3,9 +3,7 @@ import * as web3 from '@solana/web3.js'
 import bs58 from 'bs58'
 // 导入学生介绍模型
 import { StudentIntro } from '../models/StudentIntro'
-
-// 定义学生介绍程序的公钥ID
-const STUDENT_INTRO_PROGRAM_ID = '3XACd8n8KRxrZKND8k7pnHV8YHntimtTqLgcdqarZ63h'
+import { STUDENT_INTRO_PROGRAM_ID } from '../constants'
 
 // 定义一个类来协调与Solana区块链中学生介绍相关的操作
 export class StudentIntroCoordinator {
