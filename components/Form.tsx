@@ -11,7 +11,7 @@ import * as web3 from '@solana/web3.js'
 import { FC, useState } from 'react'
 import { StudentIntro } from '../models/StudentIntro'
 
-const STUDENT_INTRO_PROGRAM_ID = 'HdE95RSVsdb315jfJtaykXhXY478h53X6okDupVfY9yf'
+const STUDENT_INTRO_PROGRAM_ID = 'DZmLh4QzbcVBvYSqxA2kSfyR1XwPXFrJg4PNbmmsDJ4G'
 
 export const Form: FC = () => {
   const [name, setName] = useState('')

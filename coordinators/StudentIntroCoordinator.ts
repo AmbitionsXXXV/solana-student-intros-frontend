@@ -5,7 +5,7 @@ import bs58 from 'bs58'
 import { StudentIntro } from '../models/StudentIntro'
 
 // 定义学生介绍程序的公钥ID
-const STUDENT_INTRO_PROGRAM_ID = 'HdE95RSVsdb315jfJtaykXhXY478h53X6okDupVfY9yf'
+const STUDENT_INTRO_PROGRAM_ID = '3XACd8n8KRxrZKND8k7pnHV8YHntimtTqLgcdqarZ63h'
 
 // 定义一个类来协调与Solana区块链中学生介绍相关的操作
 export class StudentIntroCoordinator {
